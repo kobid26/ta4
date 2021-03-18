@@ -32,8 +32,8 @@ function preload(){
 	f3 = loadImage("fire3.png")
 
 	
-	bgSound1 = loadSound("imagesSounds/die.mp3");
-	shootSound1 = loadSound("imagesSounds/shootSound.mp3");
+	//bgSound1 = loadSound("imagesSounds/bgSound.mp3");
+	//shootSound1 = loadSound("imagesSounds/shootSound.mp3");
 	
 }
 
@@ -92,7 +92,7 @@ function draw(){
 		spawnCoins();
 		spawnBullets();
 		differentBg();
-	bgSound1.play();
+	//bgSound1.play();
 	
 	//gameOver.visible = false;
 	background(bg1);
@@ -116,7 +116,7 @@ function draw(){
 		b1.velocityY=-15
 		b1.scale=0.15
 		bulletGroup.add(b1)
-		shootSound1.play();
+		//shootSound1.play();
 	}
 	
 	
@@ -203,10 +203,7 @@ if (keyDown("r") && gameState === END){
 	text("Your Lives => "+hearts,200,200);
 
 	text("Coins Collected => "+coinsCollected,200,240);
-	fill("black");
-	stroke("black")
-	textFont("chiller");
-	textSize(48);
+	
 
 	text("Jets Destroyed => "+jetsDestroyed,200,280);
 	fill("red");
