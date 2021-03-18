@@ -38,7 +38,7 @@ function preload(){
 }
 
 function setup(){
-	canvas = createCanvas(displayWidth, 1000);
+	canvas = createCanvas(displayWidth,displayHeight);
 
 bg = createSprite(500,+30,2000,2800);
 bg.addImage(bg1)
@@ -212,6 +212,10 @@ if (keyDown("r") && gameState === END){
 	textSize(48);
 	
 	text("Press R to restart the game",200,320)
+
+	text("Press Space to shoot",200,360);
+
+	
 	
 }
 function spawnEnemy(){
